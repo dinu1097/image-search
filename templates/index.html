@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Similar Faces</title>
+</head>
+<body>
+    <h1>Find Similar Faces</h1>
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" name="input_image">
+        <input type="submit" value="Find Similar Faces">
+    </form>
+    <h2>Matching Images:</h2>
+    <ul>
+        {% for image_name in matching_images %}
+            <li><img src="../{{ url_for('static', filename=image_name) }}" alt="Matching Face ww"></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
