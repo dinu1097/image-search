@@ -39,7 +39,7 @@ def index():
             input_image = cv2.imdecode(np.frombuffer(input_image.read(), np.uint8), cv2.IMREAD_UNCHANGED)
             input_face_features = extract_face_features(input_image)
             
-            array_of_images = ['2.jpeg', '3.jpeg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg']
+            array_of_images = ['1.jpg','2.jpeg', '3.jpeg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg']
             
             for image_path in array_of_images:
                 image = cv2.imread(image_path)
